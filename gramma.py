@@ -4,7 +4,7 @@ import argparse
 import sys
 
 # Descrição da interface da linha de comando.
-parser = argparse.ArgumentParser(description="Gera palavras que são reconhecidas pela gramática indicada e que tenham o comprimento determinado.")
+parser = argparse.ArgumentParser(description="Gera palavras que são reconhecidas pela gramática indicada e que tenham exatamente o tamanho determinado.")
 parser.add_argument('input_file', metavar='ARQUIVO', type=argparse.FileType('r'),
                    help='Indica o arquivo que contém a gramática que será usada.')
 parser.add_argument('num', metavar='COMPRIMENTO', type=int,
